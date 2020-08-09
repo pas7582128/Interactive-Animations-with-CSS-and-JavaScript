@@ -25,11 +25,14 @@ hp-presentation>hp-slide{
 }
 
 hp-presentation>hp-slide.active{
-    display: inline-block;
+    display: flex;
 }
 
 hp-slide{
-    display: inline-block   ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
     width: 80%;
     height: 80%;
     margin: 10%;
@@ -180,4 +183,14 @@ hp-learn-no, hp-learn-yes{
     to{
         opacity: 0.0;
     }
+}
+
+.hidden{
+    display: none;
+}
+
+path{
+    fill: none;
+    stroke: #00f;
+    stroke-width: 1.5vmin;
 }
